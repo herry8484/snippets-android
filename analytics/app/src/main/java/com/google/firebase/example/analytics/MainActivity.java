@@ -62,10 +62,9 @@ public class MainActivity extends AppCompatActivity
         recordScreenView();
     }
 
-    public void enhancedEcommerce() {
+    public void enhancedEcommerce() {private FirebaseAnalytics mFirebaseAnalytics;
         // [START create_items]
         Bundle itemJeggings = new Bundle();
-        itemJeggings.putString(FirebaseAnalytics.Param.ITEM_ID, "SKU_123");
         itemJeggings.putString(FirebaseAnalytics.Param.ITEM_NAME, "jeggings");
         itemJeggings.putString(FirebaseAnalytics.Param.ITEM_CATEGORY, "pants");
         itemJeggings.putString(FirebaseAnalytics.Param.ITEM_VARIANT, "black");
